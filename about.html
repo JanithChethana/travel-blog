@@ -2,26 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.H.M.C.J. ABEYRATHNA - Profile</title>
+    <style>
+        body {
+            background-color: #fdfaf5;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #d4a373;
+            padding-bottom: 8px;
+        }
+
+        .profile-container img {
+            width: 340px;
+            max-width: 90vw;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            border: 5px solid white;
+        }
+
+        .profile-container img:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .description-box {
+            max-width: 650px;
+            margin-top: 35px;
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #444;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Travel Interests Section */
+        .interests-section {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 650px;
+            text-align: left;
+        }
+
+        .interests-section h2 {
+            text-align: center;
+            color: #d4a373;
+            font-size: 1.8em;
+        }
+
+        .interests-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .interests-list li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #d4a373;
+            transition: 0.3s;
+        }
+
+        .interests-list li:hover {
+            background: #d4a373;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .extra-info {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            width: 100%;
+            max-width: 650px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
+
     <h1>A.H.M.C.J. ABEYRATHNA</h1>
 
-    <img src="profile.jpeg" alt="Profile Photo" width="200">
+    <div class="profile-container">
+        <img src="profile.jpeg" alt="Profile Photo">
+    </div>
 
-    <h2>About Me</h2>
-    <p>I am a passionate traveler who loves exploring hidden gems and experiencing different cultures. Traveling allows me to see the world from new perspectives.</p>
+    <div class="description-box">
+        I believe that the best stories aren't found in books, but in the footprints we leave behind. Whether I’m navigating the neon-lit streets of a bustling metropolis or finding stillness in a remote mountain village, I travel to be challenged and changed. My goal is to go beyond the typical tourist paths, seeking out authentic flavors, local traditions, and those fleeting, 'un-Googleable' moments that make every journey unique.
+    </div>
 
-    <h2>Travel Interests</h2>
-    <ul>
-        <li>Mountain Hiking</li>
-        <li>Beach Photography</li>
-        <li>Cultural Heritage Sites</li>
-        <li>Street Food Exploration</li>
-    </ul>
+    <div class="interests-section">
+        <h2>Travel Interests</h2>
+        <ul class="interests-list">
+            <li>Mountain Hiking</li>
+            <li>Beach Photography</li>
+            <li>Cultural Heritage</li>
+            <li>Wildlife Safari</li>
+            <li>Street Food</li>
+        </ul>
+    </div>
 
-    <h2>Contact Information</h2>
-    <p>Email: ec2021022@stu.kln.ac.lk</p>
-    <p>Student Number: EC/2021/022</p>
+    <div class="extra-info">
+        <p>Student Number: EC/2021/022</p>
+        <p>Email: ec2021022@stu.kln.ac.lk</p>
+    </div>
+
 </body>
 </html>

@@ -2,33 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Stories</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfaf5;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* පින්තූර සහ විස්තර දෙපසට බෙදන container එක */
+        .destinations-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* පෙට්ටි දෙක අතර පරතරය */
+            flex-wrap: wrap; /* කුඩා screen වලදී එක යට එක යාමට */
+        }
+
+        /* එක් සංචාරක ස්ථානයක් සඳහා වන card එක */
+        .destination-card {
+            background: #fff;
+            width: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* පින්තූරයේ සැකසුම් */
+        .destination-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* පින්තූරය box එකට ගැලපෙන සේ කැපීම */
+        }
+
+        /* විස්තරය සඳහා සැකසුම් */
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .content h2 {
+            color: #d4a373;
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+
+        .content p {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .content ul {
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
+
     <h1>My Travel Stories</h1>
 
-    <section>
-        <h2>Ella, Sri Lanka</h2>
-        <p>A beautiful mountain town known for its stunning views and tea plantations.</p>
-        <ul>
-            <li>Hiking Little Adam's Peak</li>
-            <li>Visiting Nine Arch Bridge</li>
-            <li>Tea factory tour</li>
-        </ul>
-        <img src="ella.jpeg" alt="Ella" width="300">
-    </section>
+    <div class="destinations-container">
+        
+        <div class="destination-card">
+            <img src="ella.jpeg" alt="Ella">
+            <div class="content">
+                <h2>Ella, Sri Lanka</h2>
+                <p>A beautiful mountain town known for its stunning views and tea plantations.</p>
+                <ul>
+                    <li>Hiking Little Adam's Peak</li>
+                    <li>Visiting Nine Arch Bridge</li>
+                    <li>Tea factory tour</li>
+                </ul>
+            </div>
+        </div>
 
-    <hr>
+        <div class="destination-card">
+            <img src="galle.jpeg" alt="Galle">
+            <div class="content">
+                <h2>Galle Fort</h2>
+                <p>A historic Dutch fort with charming streets and coastal views.</p>
+                <ul>
+                    <li>Walking along the ramparts</li>
+                    <li>Exploring the lighthouse</li>
+                    <li>Shopping for local crafts</li>
+                </ul>
+            </div>
+        </div>
 
-    <section>
-        <h2>Galle Fort</h2>
-        <p>A historic Dutch fort with charming streets and coastal views.</p>
-        <ul>
-            <li>Walking along the ramparts</li>
-            <li>Exploring the lighthouse</li>
-            <li>Shopping for local crafts</li>
-        </ul>
-        <img src="galle.jpeg" alt="Galle" width="300">
-    </section>
+    </div>
+
 </body>
 </html>
